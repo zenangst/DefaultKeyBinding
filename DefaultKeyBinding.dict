@@ -98,6 +98,10 @@
 		"~w" = (selectPreviousKeyView:);
 		"~s" = (selectNextKeyView:);
 		"~d" = (selectNextKeyView:);
+		"~l" = (selectPreviousKeyView:);
+		"~p" = (selectPreviousKeyView:);
+		"~ö" = (selectNextKeyView:);
+		"~ä" = (selectNextKeyView:);
 	
   	// paste after
 	  "p" = (breakUndoCoalescing:, moveToEndOfParagraph:,moveRight:,insertNewline:,moveLeft:, paste:);
