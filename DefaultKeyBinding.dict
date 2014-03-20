@@ -18,8 +18,10 @@
 	
 	"~r" = (moveToEndOfParagraph:);
 	"~u" = (lowercaseWord:);
-	"~å" = (selectNextKeyView:);
 	"~o" = (selectPreviousKeyView:);
+    "~å" = (selectNextKeyView:);
+	"~c" = (selectNextKeyView:);
+	"~z" = (selectNextKeyView:);
 	
 	"~x" = (deleteBackward:);
 	
