@@ -18,8 +18,8 @@
 	
 	"~r" = (moveToEndOfParagraph:);
 	"~u" = (lowercaseWord:);
-	"~å" = (moveToBeginningOfParagraph:);
-	"~o" = (moveToEndOfParagraph:);
+	"~å" = (selectNextKeyView:);
+	"~o" = (selectPreviousKeyView:);
 	
 	"~x" = (deleteBackward:);
 	
