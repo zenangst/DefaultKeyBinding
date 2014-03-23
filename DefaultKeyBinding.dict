@@ -72,9 +72,9 @@
   // blank line before current
   "~O" = (moveToBeginningOfParagraph:, moveLeft:, insertNewline:);
 	
-	"~C" = (moveToEndOfParagraphAndModifySelection:);
+	"~V" = (moveToEndOfParagraphAndModifySelection:);
 	"~X" = (deleteForward:);
-	"~Z" = (moveToBeginningOfParagraphAndModifySelection:);
+	"~>" = (moveToBeginningOfParagraphAndModifySelection:);
 	
 	// Bundle
 	"@\U003C" = {
