@@ -20,9 +20,8 @@
 	"~u" = (lowercaseWord:);
 	"~o" = (selectPreviousKeyView:);
   "~å" = (selectNextKeyView:);
-	"~c" = (selectNextKeyView:);
-	"~z" = (selectNextKeyView:);
-	"~<" = (selectNextKeyView:);
+	"~e" = (selectNextKeyView:);
+	"~q" = (selectPreviousKeyView:);
 	
 	"~x" = (deleteBackward:);
 	
