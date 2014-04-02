@@ -22,6 +22,9 @@
   "~å" = (selectNextKeyView:);
 	"~e" = (selectNextKeyView:);
 	"~q" = (selectPreviousKeyView:);
+  
+  "~f" = (moveWordForwardAndModifySelection:);
+  "~F" = (moveWordBackwardAndModifySelection:);
 	
 	"~x" = (deleteBackward:);
 	
@@ -90,66 +93,6 @@
 		"^@s" = (selectNextKeyView:);
 		"^@d" = (selectNextKeyView:);
   };
-  
-	"~f" = {
-		"a" = (selectPreviousKeyView:);
-		"w" = (selectPreviousKeyView:);
-		"s" = (selectNextKeyView:);
-		"d" = (selectNextKeyView:);
-		"~a" = (selectPreviousKeyView:);
-		"~w" = (selectPreviousKeyView:);
-		"~s" = (selectNextKeyView:);
-		"~d" = (selectNextKeyView:);
-		"~l" = (selectPreviousKeyView:);
-		"~p" = (selectPreviousKeyView:);
-		"~ö" = (selectNextKeyView:);
-		"~ä" = (selectNextKeyView:);
-	
-  	// paste after
-	  "p" = (breakUndoCoalescing:, moveToEndOfParagraph:,moveRight:,insertNewline:,moveLeft:, paste:);
-	  // paste before
-	  "P" = (breakUndoCoalescing:, moveToBeginningOfParagraph:, moveLeft:,insertNewline:, paste:);
-	  // yank
-	  "y" = (setMark:, moveToBeginningOfParagraphAndModifySelection:, moveToEndOfParagraphAndModifySelection:, copy:, swapWithMark:);
-	  "d" = { // Delete
-	      // 'dd' delete line/paragraph
-	      "d" = (setMark:, selectParagraph:, delete:, delete:, swapWithMark:);
-	      // 'd$' delete from cursor to end of graf
-	      "$" = (moveToEndOfParagraphAndModifySelection:, delete:);
-	      // 'd0' delete to beginning of paragraph
-	      "0" = (moveToBeginningOfParagraphAndModifySelection:, delete:);
-	      // 'd^' delete to beginning of paragraph
-	      "^" = (moveToBeginningOfParagraphAndModifySelection:, delete:);
-				// wrap () with spaces
-		    "(" = (delete:, insertText:, "( ", yank:, insertText:, " ", moveLeft:, insertText:, " )", deleteForward:);
-		    // wrap () no spaces
-		    ")" = (delete:, insertText:, "( ", deleteBackward:, yank:, insertText:, " ", moveLeft:, insertText:, ")", deleteForward:);
-		    // wrap [] with spaces
-		    "[" = (delete:, insertText:, "[ ", yank:, insertText:, " ", moveLeft:, insertText:, " ]", deleteForward:);
-		    // wrap [] no spaces
-		    "]" = (delete:, insertText:, "[ ", deleteBackward:, yank:, insertText:, " ", moveLeft:, insertText:, "]", deleteForward:);
-		    // wrap {} with spaces
-		    "{" = (delete:, insertText:, "{ ", yank:, insertText:, " ", moveLeft:, insertText:, " }", deleteForward:);
-		    // wrap {} no spaces
-		    "}" = (delete:, insertText:, "{ ", deleteBackward:, yank:, insertText:, " ", moveLeft:, insertText:, "}", deleteForward:);
-		    // wrap <> with spaces
-		    "<" = (delete:, insertText:, "< ", yank:, insertText:, " ", moveLeft:, insertText:, " >", deleteForward:);
-		    // wrap <> no spaces
-		    ">" = (delete:, insertText:, "< ", deleteBackward:, yank:, insertText:, " ", moveLeft:, insertText:, ">", deleteForward:);
-		    // wrap single quotes
-		    "'" = (delete:, insertText:, "' ", deleteBackward:, yank:, insertText:, " ", moveLeft:, insertText:, "'", deleteForward:);
-		    // wrap backticks
-		    "`" = (delete:, insertText:, "` ", deleteBackward:, yank:, insertText:, " ", moveLeft:, insertText:, "`", deleteForward:);
-		    // wrap double quote
-		    "\"" = (delete:, insertText:, "\" ", deleteBackward:, yank:, insertText:, " ", moveLeft:, insertText:, "\"", deleteForward:);
-		    // wrap pipe
-		    "\|" = (delete:, insertText:, "| ", deleteBackward:, yank:, insertText:, " ", moveLeft:, insertText:, "|", deleteForward:);
-	  };
-		"o" = (moveToEndOfParagraph:, insertNewline:);
-		"O" = (moveToBeginningOfParagraph:, moveLeft:, insertNewline:);
-		"~3" = (moveToEndOfParagraph:);
-		"0" = (moveToBeginningOfParagraph:);
-	};
   
   "~§" = (noop:);
   "$~§" = (noop:);
