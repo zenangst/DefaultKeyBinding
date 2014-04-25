@@ -4,35 +4,32 @@
 	"@^d" = (moveRight:);
 	"@^s" = (moveDown:);
 	"@^a" = (moveLeft:);
-	
+
 	// Option
 	"~w" = (moveUp:);
 	"~d" = (moveRight:);
 	"~s" = (moveDown:);
 	"~a" = (moveLeft:);
-	
+
 	"~p" = (moveUp:);
 	"~ä" = (moveRight:);
 	"~ö" = (moveDown:);
 	"~l" = (moveLeft:);
-	
 	"~r" = (moveToEndOfParagraph:);
 	"~u" = (lowercaseWord:);
 	"~o" = (selectPreviousKeyView:);
   "~å" = (selectNextKeyView:);
-	"~e" = (selectNextKeyView:);
-	"~q" = (selectPreviousKeyView:);
-  
+
   "~f" = (moveWordForwardAndModifySelection:);
   "~F" = (moveWordBackwardAndModifySelection:);
-	
+
 	"~x" = (deleteBackward:);
-	
+
 	// Shift+Control+Command
 	"@^A" = (moveToBeginningOfParagraphAndModifySelection:);
 	"@^D" = (moveToEndOfParagraphAndModifySelection:);
 	"@^E" = (moveToEndOfParagraphAndModifySelection:);
-	
+
 	// Control
 	"^a" = (moveLeft:, moveLeft:, selectWord:);
 	"^c" = (moveWordForward:);
@@ -46,39 +43,41 @@
 	"^w" = (moveUp:, moveRight:, selectWord:);
 	"^x" = (deleteBackward:);
 	"^z" = (moveWordBackward:);
-	
+
 	// Control+Option
 	"^~c" = (selectNextKeyView:);
 	"^~x" = (moveToBeginningOfParagraph:, moveToEndOfParagraphAndModifySelection:, deleteForward:);
 	"^~z" = (selectPreviousKeyView:);
-	
+	"~^e" = (selectNextKeyView:);
+	"~^q" = (selectPreviousKeyView:);
+
 	// Shift+Control
 	"^L" = (selectParagraph:);
-	
+
 	// Shift+Command
 	"@V" = (selectNextKeyView:);
 	"@C" = (selectPreviousKeyView:);
 	"@X" = (selectPreviousKeyView:);
-	
+
 	// Control
 	"^ " = (complete:);
-	
+
 	// Shift+Option
 	"~W" = (moveUpAndModifySelection:);
 	"~D" = (moveRightAndModifySelection:);
 	"~S" = (moveDownAndModifySelection:);
 	"~A" = (moveLeftAndModifySelection:);
-	
+
 	"~R" = (moveToBeginningOfParagraph:);
 	"~U" = (uppercaseWord:);
-	
+
   // blank line before current
   "~O" = (moveToBeginningOfParagraph:, moveLeft:, insertNewline:);
-	
+
 	"~V" = (moveToEndOfParagraphAndModifySelection:);
 	"~X" = (deleteForward:);
 	"~>" = (moveToBeginningOfParagraphAndModifySelection:);
-	
+
 	// Bundle
 	"@\U003C" = {
 		"a" = (selectPreviousKeyView:);
@@ -86,23 +85,23 @@
 		"s" = (selectNextKeyView:);
 		"d" = (selectNextKeyView:);
 	};
-	
+
   "^@f" = {
 		"^@a" = (selectPreviousKeyView:);
 		"^@w" = (selectPreviousKeyView:);
 		"^@s" = (selectNextKeyView:);
 		"^@d" = (selectNextKeyView:);
   };
-  
+
   "~§" = (noop:);
   "$~§" = (noop:);
-	
+
 	// TextMate Command-Return (Command Enter)
   "^@\U000D" = (moveToEndOfParagraph:, insertNewline:);
   "~@\U000D" = (moveToBeginningOfParagraph:, moveLeft:, insertNewline:);
 	"~@\U0003" = (moveToBeginningOfParagraph:, moveLeft:, insertNewline:);
 	"@\U0003" = (noop:);
-	
+
 	// bookmark
   "~1" = (setMark:);
   // jump to bookmark
