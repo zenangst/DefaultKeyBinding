@@ -35,7 +35,7 @@
 
 	// Control
 	"^a" = (moveLeft:, moveLeft:, selectWord:);
-	"^c" = (moveWordForward:);
+	"^c" = (selectNextKeyView:);
 	"^d" = (moveRight:, selectWord:);
 	"^e" = (moveToEndOfParagraph:);
 	//"^f" = (centerSelectionInVisibleArea:);
@@ -45,7 +45,7 @@
 	"^v" = (noop:);
 	"^w" = (moveUp:, moveRight:, selectWord:);
 	"^x" = (deleteBackward:);
-	"^z" = (moveWordBackward:);
+	"^z" = (selectPreviousKeyView:);
 
 	// Control+Option
 	"^~c" = (selectNextKeyView:);
