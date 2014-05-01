@@ -21,6 +21,7 @@
     "~å" = (selectNextKeyView:);
 
     "~<" = (selectPreviousKeyView:);
+    "~z" = (selectPreviousKeyView:);
     "~c" = (selectNextKeyView:);
 
     "~f" = (moveWordForwardAndModifySelection:);
