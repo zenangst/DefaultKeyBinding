@@ -74,7 +74,8 @@
 
 	"~R" = (moveToBeginningOfParagraph:);
 	"~U" = (uppercaseWord:);
-
+  "~C" = (selectPreviousKeyView:);
+  
   // blank line before current
   "~O" = (moveToBeginningOfParagraph:, moveLeft:, insertNewline:);
 
